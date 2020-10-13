@@ -47,7 +47,9 @@ The simplest way is calling after you have built the workspace successfully.
 $ export ROS_PACKAGE_PATH="$HOME/catkin_ws/src/sjtu-drone/":$ROS_PACKAGE_PATH
 $ roslaunch sjtu_drone simple.launch
 ```
-This would open Gazebo with a stopped simulation. Press play button to start it.
+This would open Gazebo with a stopped simulation. Use mouse to change view position.
+
+**Press play button to start it.**
 
 # Running with keyboard
 In second terminal:
@@ -58,6 +60,8 @@ $ rosrun sjtu_drone drone_keyboard
 ```
 
 Then select the keyboard control ui and press Z to takeoff.
+
+![Simulation preview](simulation.png)
 
 Good luck!
 
