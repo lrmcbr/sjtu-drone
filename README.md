@@ -44,8 +44,7 @@ $ catkin_make
 The simplest way is calling after you have built the workspace successfully.
 
 ```
-$ cd ~/catkin_ws/src
-$ export ROS_PACKAGE_PATH=`pwd`:$ROS_PACKAGE_PATH
+$ export ROS_PACKAGE_PATH="$HOME/catkin_ws/src/sjtu-drone/":$ROS_PACKAGE_PATH
 $ roslaunch sjtu_drone simple.launch
 ```
 This would open Gazebo with a stopped simulation. Press play button to start it.
@@ -54,6 +53,7 @@ This would open Gazebo with a stopped simulation. Press play button to start it.
 In second terminal:
 
 ```
+$ export ROS_PACKAGE_PATH="$HOME/catkin_ws/src/sjtu-drone/":$ROS_PACKAGE_PATH
 $ rosrun sjtu_drone drone_keyboard
 ```
 
