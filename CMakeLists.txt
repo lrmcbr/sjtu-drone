@@ -115,6 +115,7 @@ set_target_properties( plugin_ros_cam
     ${PROJECT_SOURCE_DIR}/plugins
 )
 
+
 ################# 5. A program using the keyboard to control the quadrotor #####  
 set(CMAKE_AUTOUIC ON)
 
@@ -136,6 +137,12 @@ add_executable( drone_keyboard
 target_link_libraries( drone_keyboard
   ${QT_LIBRARIES}
   ${catkin_LIBRARIES}
+)
+
+set_target_properties( drone_keyboard
+    PROPERTIES
+    RUNTIME_OUTPUT_DIRECTORY
+    ${PROJECT_SOURCE_DIR}/bin
 )
 
 ################ 6. A simple program for spawning a drone model ###############
